@@ -48,7 +48,7 @@ public class Flecha : MonoBehaviour
             puntos += puntaje;
             Debug.Log("el puntaje obtenido es : " + puntaje);
             
-            textoPuntos.text = "Puntos: " + puntos.ToString();
+            textoPuntos.text = "Puntos obtenidos: " + puntos.ToString();
             Contador scoreManager = FindObjectOfType<Contador>();
             scoreManager.PuntajeActulizado(puntaje);
 

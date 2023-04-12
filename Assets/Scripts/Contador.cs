@@ -11,7 +11,7 @@ public class Contador : MonoBehaviour
     public void PuntajeActulizado(int punto)
     {
         puntos += punto;
-        puntajeTexto.text = "Score: " + puntos.ToString();
+        puntajeTexto.text = "Puntos Acumulados: " + puntos.ToString();
     }
 
 }

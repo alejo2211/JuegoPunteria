@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Contador : MonoBehaviour
 {
     public int puntos = 0;
-    public Text puntajeTexto;
+    public TextMeshProUGUI puntajeTexto;
     
     public void PuntajeActulizado(int punto)
     {

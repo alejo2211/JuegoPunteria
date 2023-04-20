@@ -16,7 +16,7 @@ public class Arco : MonoBehaviour
     public float distanciaMaxima=0.9f;
     public Flecha flecha;
     public float fuerzaDisparo = 30;
-   
+    public Animator arcoAnimator;
     
 
     Vector3 direccion;
@@ -53,6 +53,7 @@ public class Arco : MonoBehaviour
                 agarrado = true;
                 direccion = diferencia.normalized;
                 distancia = diferencia.magnitude;
+                arcoAnimator.SetFloat("Blend", distancia / distanciaMaxima);
                 
                 if (distancia<distanciaMaxima)
                 {

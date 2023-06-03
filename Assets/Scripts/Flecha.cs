@@ -16,6 +16,8 @@ public class Flecha : MonoBehaviour
     private int puntos = 0;
     public TextMeshProUGUI textoPuntos;
 
+    public Animator animacion;
+    public ParticleSystem particula;
 
 
     public int puntuacion { get; internal set; }
@@ -51,8 +53,11 @@ public class Flecha : MonoBehaviour
             textoPuntos.text = "Puntos obtenidos: " + puntos.ToString();
             Contador scoreManager = FindObjectOfType<Contador>();
             scoreManager.PuntajeActulizado(puntaje);
-
+            other.GetComponent<Animator>().enabled = true;
+            particula.transform.SetParent(null);
+            particula.Play();
         }
+        
     }
     
 }

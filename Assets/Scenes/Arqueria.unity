@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 4014a40b35bf9744da06f4fd31e756a7,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -16913,7 +16914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeff57bc20da8a741b7a13ea8bdfe2e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 10
+  timer: 60
   tiempoRestante: 10
   textoTimer: {fileID: 1283720185}
   gameOver: {fileID: 1225624358}

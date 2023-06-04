@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-    public float timer = 0f;
+    public float timer = 10f;
     public float tiempoRestante;
     public TextMeshProUGUI textoTimer;
     public GameObject gameOver;
@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
         textoTimer.text = "" + (Mathf.CeilToInt(tiempoRestante)).ToString();
         if (tiempoRestante <= 0f)
         {
-            //PausarJuego();
+           
             gameOver.SetActive(true);
         }
         else
